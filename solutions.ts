@@ -2,17 +2,17 @@
 
 function filterEvenNumbers(numbers: number[]): number[] {
     let answer: number[] = [];
+
     for (let i = 0; i < numbers.length; i++) {
 
-
-        if (numbers[i] % 2 === 0) 
-        {
+        if (numbers[i] % 2 === 0) {
             answer.push(numbers[i]);
-        }}
-
+        }
+    }
 
     return answer;
 }
+
 
 
 
@@ -31,26 +31,18 @@ function reverseString(text: string): string {
 
 
 
-
-
-
 // ___________________Solution no. 3___________________
 
 type StringOrNumber = string | number;
 
 function checkType(value: StringOrNumber): string {
-    if (typeof value === "string") 
-    {
+    if (typeof value === "string") {
         return "String";
-    } 
-    else 
-    {
+    }
+    else {
         return "Number";
     }
 }
-
-
-
 
 
 
@@ -58,12 +50,10 @@ function checkType(value: StringOrNumber): string {
 
 
 
-function getProperty(X: any, Y: string) {
-    return X[Y];
+function getProperty<T, K extends keyof T>(obj: T, key: K) {
+    return obj[key];
 }
 // const user = { id: 1, name: "John Doe", age: 21 };
-
-
 
 
 
@@ -78,9 +68,7 @@ interface Book {
 }
 
 
-
 function toggleReadStatus(book: Book) {
-
 
     const { title, author, publishedYear } = book;
 
@@ -106,7 +94,7 @@ function toggleReadStatus(book: Book) {
 class Person {
     name: string;
     age: number;
- constructor(name: string, age: number) {
+    constructor(name: string, age: number) {
 
         this.name = name;
         this.age = age;
@@ -121,7 +109,7 @@ class Student extends Person {
         this.grade = grade;
     }
 
-    getDetails() {
+    getDetails(): string {
 
         return "Name: " + this.name + ", Age: " + this.age + ", Grade: " + this.grade;
     }
@@ -132,19 +120,19 @@ class Student extends Person {
 
 
 
+
 //   _____________________Solution no. 07_________________
 
 
-function getIntersection(arr1: number[], arr2: number[]) {
 
+function getIntersection(arr1: number[], arr2: number[]): number[] {
     let ans: number[] = [];
 
     for (let i = 0; i < arr1.length; i++) {
-        if (arr2.includes(arr1[i])) {
+        if (arr2.includes(arr1[i]) && !ans.includes(arr1[i])) {
             ans.push(arr1[i]);
         }
     }
 
-
     return ans;
-}                               
+}

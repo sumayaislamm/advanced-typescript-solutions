@@ -31,7 +31,7 @@ All solutions are implemented in a single file: `solutions.ts`.
 
 1. Install TypeScript (if not installed)
 - npm install -g typescript 
-2. node solutions.ts (run this command in terminal)
+2. ts-node solutions.ts (run this command in terminal)
 
 
 ## Blog Section 
@@ -48,8 +48,8 @@ such as:
 
 ### Blog 2 
 
-#### Topic 4: 
-👉 How do the four pillars of OOP—Inheritance, Polymorphism, Abstraction, and Encapsulation—help manage logic and reduce complexity in large-scale TypeScript projects?
+#### Topic 2:
+👉 How do Pick and Omit utility types prevent code duplication while creating specialized "slices" of a master interface?
 
 
 
