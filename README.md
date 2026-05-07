@@ -19,8 +19,11 @@ All solutions are implemented in a single file: `solutions.ts`.
 ## File Structure
 
 ├── solutions.ts
+
 ├── blog-1.md
+
 ├── blog-2.md 
+
 └── README.md
 
 
