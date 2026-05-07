@@ -15,8 +15,6 @@ function filterEvenNumbers(numbers: number[]): number[] {
 
 
 
-
-
 // ___________________Solution no. 2___________________
 
 function reverseString(text: string): string {
@@ -26,8 +24,6 @@ function reverseString(text: string): string {
     return reversedArray.join("");
 
 }
-
-
 
 
 
@@ -49,7 +45,6 @@ function checkType(value: StringOrNumber): string {
 // ___________________Solution no. 4_________________
 
 
-
 function getProperty<T, K extends keyof T>(obj: T, key: K) {
     return obj[key];
 }
@@ -58,7 +53,6 @@ function getProperty<T, K extends keyof T>(obj: T, key: K) {
 
 
 // ___________________Solution no. 5_________________
-
 
 
 interface Book {
@@ -90,7 +84,6 @@ function toggleReadStatus(book: Book) {
 //   ___________________  Solution no. 6_________________
 
 
-
 class Person {
     name: string;
     age: number;
@@ -119,10 +112,7 @@ class Student extends Person {
 
 
 
-
-
 //   _____________________Solution no. 07_________________
-
 
 
 function getIntersection(arr1: number[], arr2: number[]): number[] {
