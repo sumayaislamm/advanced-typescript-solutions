@@ -27,7 +27,7 @@ All solutions are implemented in a single file: `solutions.ts`.
 └── README.md
 
 
-## 💻 How to Run the Code
+## How to Run the Code
 
 1. Install TypeScript (if not installed)
 - npm install -g typescript 
